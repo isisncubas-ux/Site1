@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizVerse | Conhecimentos Gerais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <header class="header">
+            <div class="logo">✦ QuizVerse</div>
+            <span class="tag">DESAFIE SUA MENTE</span>
+        </header>
+
+        <section class="intro" id="intro">
+            <div class="icon">🧠</div>
+            <p class="subtitle">TESTE SEU CONHECIMENTO</p>
+            <h1>Quanto você<br>realmente sabe?</h1>
+            <p class="description">
+                Explore diferentes áreas, desafie sua memória
+                e descubra quantas perguntas você consegue acertar.
+            </p>
+
+            <div class="info">
+                <div>
+                    <strong>10</strong>
+                    <span>Perguntas</span>
+                </div>
+                <div>
+                    <strong>4</strong>
+                    <span>Alternativas</span>
+                </div>
+                <div>
+                    <strong>∞</strong>
+                    <span>Conhecimento</span>
+                </div>
+            </div>
+
+            <button id="start-btn" class="primary-btn">
+                Começar quiz <span>→</span>
+            </button>
+        </section>
+
+        <section id="quiz" class="quiz hidden">
+            <div class="quiz-top">
+                <span id="category">CONHECIMENTOS GERAIS</span>
+                <span id="counter">01 / 10</span>
+            </div>
+
+            <div class="progress">
+                <div id="progress-bar"></div>
+            </div>
+
+            <p id="question-number" class="subtitle">PERGUNTA 01</p>
+            <h2 id="question">Pergunta aqui</h2>
+
+            <div id="answers" class="answers"></div>
+
+            <p id="feedback" class="feedback" aria-live="polite"></p>
+
+            <button id="next-btn" class="primary-btn" disabled>
+                Próxima pergunta →
+            </button>
+        </section>
+
+        <section id="result" class="result hidden">
+            <div class="icon">🏆</div>
+            <p class="subtitle">QUIZ CONCLUÍDO</p>
+            <h1 id="result-title">Muito bem!</h1>
+            <p class="description" id="result-message"></p>
+
+            <div class="score-circle">
+                <strong id="score">0/10</strong>
+                <span>Acertos</span>
+            </div>
+
+            <p id="percentage" class="percentage">0% de aproveitamento</p>
+
+            <button id="restart-btn" class="primary-btn">
+                Jogar novamente ↻
+            </button>
+        </section>
+
+        <footer>
+            <span>QUIZVERSE © 2026</span>
+            <span>Conhecimento é poder.</span>
+        </footer>
+    </main>
+
+</body>
+</html>
